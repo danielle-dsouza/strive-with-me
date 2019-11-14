@@ -2,18 +2,19 @@
 <nav class="navbar fixed-top navbar-expand-md">
     <div class="container-fluid">
         <div>
-            <a class="navbar-brand">Strive with ME</a>
+            <a class="navbar-brand">Strive with ME</a> <!--TODO: Add routing-->
         </div>
 
-        <!-- <button class="navbar-toggler" type="button" (click)="toggleNav()">
+        <button class="navbar-toggler" type="button" (click)="toggleNav()">
             <span class="navbar-toggler-icon"></span>
-        </!-->
+        </button>
 
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" [ngClass]="{ 'show': navOpen }">
             <ul class="nav navbar-nav mr-auto" (click)="toggleNav()">
-                <li><a class="nav-link">Home</a></li>
-                <li><a class="nav-link">Services</a></li>
-                <li><a class="nav-link">Contact</a></li>       
+                <li><a class="nav-link" (click)="setTitle('Strive with ME')">Home</a></li>
+                <li><a class="nav-link" (click)="setTitle('Strive with ME | Who We Are')">Who We Are</a></li>
+                <li><a class="nav-link">Donate</a></li>
+                <li><a class="nav-link" (click)="setTitle('Strive with ME | Contact')">Contact</a></li>       
             </ul>
         </div>
     </div>
