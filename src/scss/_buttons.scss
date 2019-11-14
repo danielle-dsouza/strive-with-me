@@ -6,6 +6,8 @@
   font-weight: bold;
   font-size: 3vw;
 
+  margin: 5% 38% 0;
+
   &.btn-custom-blue {
     color: lighten($bg-dark, 10%);
     background-color: $highlight-color;
@@ -26,11 +28,12 @@
   font-size: 1vw;
 
   &.list-group-item {
-    padding-bottom: 0; 
+    padding-bottom: 0;
     border: solid 2px rgb(214, 214, 214);
   }
 
-  &:hover, &.active-service {
+  &:hover,
+  &.active-service {
     background-color: rgb(216, 216, 216);
   }
 }
@@ -41,8 +44,8 @@
     padding: 9% 0 3% 0;
 
     .btn-custom {
-      margin: 4% 42% 0;
-      font-size: 3vw;
+      margin: 3% 42% 0;
+      font-size: 2.8vw;
     }
   }
 
@@ -58,7 +61,7 @@
     padding: 6% 0 3% 0;
 
     .btn-custom {
-      margin: 3% 42% 0;
+      margin: 3% 43% 0;
       font-size: 1.5vw;
     }
   }
