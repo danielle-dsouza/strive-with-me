@@ -8,11 +8,6 @@
 
   a {
     text-decoration: none;
-
-    div {
-      text-align: center;
-      margin: 5% 38% 0;
-    }
   }
 }
 
@@ -50,6 +45,11 @@ hr {
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .title {
+    font-size: 6vw;
+    padding: 8% 0 5% 0;
+  }
+
   .main-para {
     margin: 2% 8%;
 
@@ -73,6 +73,12 @@ hr {
 }
 
 @media only screen and (min-width: 1025px) {
+
+  .title {
+    font-size: 4vw;
+    padding: 6% 0 5%;
+  }
+
   .main-para {
     margin: 2% 8%;
 
