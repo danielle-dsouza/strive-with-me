@@ -1,0 +1,70 @@
+@import "./globals";
+
+.btn-custom {
+  cursor: pointer;
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  font-size: 3vw;
+
+  &.btn-custom-blue {
+    color: lighten($bg-dark, 10%);
+    background-color: $highlight-color;
+    border: 3px solid lighten($highlight-color, 10%);
+  }
+
+  &:hover {
+    filter: brightness(150%);
+  }
+}
+
+.btn-gray {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Prompt";
+  color: black;
+  margin: 2% 4%;
+  font-size: 1vw;
+
+  &.list-group-item {
+    padding-bottom: 0; 
+    border: solid 2px rgb(214, 214, 214);
+  }
+
+  &:hover, &.active-service {
+    background-color: rgb(216, 216, 216);
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1050px) {
+  .title {
+    font-size: 5vw;
+    padding: 9% 0 3% 0;
+
+    .btn-custom {
+      margin: 4% 42% 0;
+      font-size: 3vw;
+    }
+  }
+
+  .btn-gray {
+    font-size: 1vw;
+    margin: 5% 2%;
+  }
+}
+
+@media only screen and (min-width: 1051px) {
+  .title {
+    font-size: 3vw;
+    padding: 6% 0 3% 0;
+
+    .btn-custom {
+      margin: 3% 42% 0;
+      font-size: 1.5vw;
+    }
+  }
+
+  .btn-gray {
+    font-size: 1vw;
+    margin: 5% 2%;
+  }
+}
