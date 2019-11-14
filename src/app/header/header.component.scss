@@ -1,0 +1,78 @@
+@import "../../scss/globals";
+
+.navbar {
+  padding: 0;
+  background: rgba(0,0,0,0.678);
+  overflow: hidden;
+
+  .container-fluid {
+    width: 100%;
+    padding: 0 20px; //TODO: Change px to responsive unit
+
+    button {
+      border-width: 1px;
+      border-color: rgb(231, 227, 227);
+      margin: 5px 0;
+
+      span {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231, 227, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+    }
+
+    div {
+      .navbar-brand {
+        font-family: "Staatliches";
+        color: white;
+      }
+
+      ul > li {
+        font-family: "Source Sans Pro";
+        letter-spacing: 1px;
+        padding: 0 20px 0 10px;
+        list-style: none;
+
+        a {
+          color: rgb(231, 227, 227);
+
+          &:hover {
+            padding-bottom: 0.3em;
+            color: white;
+            border-bottom: 3px solid $highlight-color;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active-link {
+  color: white;
+  border-bottom: 3px solid $highlight-color;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar > div > div {
+    .navbar-brand {
+      font-size: 3vw;
+
+      ul > li {
+        font-size: 1.3vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar > div > div{
+    .navbar-brand {
+      font-size: 2.5vw;
+      font-family: "Staatliches";
+
+      ul > li {
+        font-size: 1.3vw;
+      }
+    }
+  }
+}
