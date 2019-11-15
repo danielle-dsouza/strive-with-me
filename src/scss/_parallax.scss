@@ -1,0 +1,52 @@
+// Parallax Images
+.p-img {
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+}
+
+.parallax-img1 {
+  background-image: url("../../assets/images/bowl.jpg");
+}
+
+.parallax-img2 {
+  background-image: url("../../assets/images/bowl.jpg");
+}
+
+.caption {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: white;
+
+  span {
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 20px; //FIXME: Make responsive
+    font-family: "Fjalla One", sans-serif;
+    font-size: 4vw;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .p-img {
+    height: 200px;
+  }
+
+  .caption>span {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .p-img {
+    height: 300px;
+  }
+
+  .caption>span {
+    font-size: 1.5vw;
+  }
+}
