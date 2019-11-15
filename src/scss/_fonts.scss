@@ -46,7 +46,7 @@ hr {
 
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   .title {
-    font-size: 6vw;
+    font-size: 4vw;
     padding: 8% 0 5% 0;
   }
 
@@ -75,7 +75,7 @@ hr {
 @media only screen and (min-width: 1025px) {
 
   .title {
-    font-size: 4vw;
+    font-size: 3vw;
     padding: 6% 0 5%;
   }
 
@@ -83,11 +83,11 @@ hr {
     margin: 2% 8%;
 
     div:nth-child(1) {
-      font-size: 2vw;
+      font-size: 1.5vw;
     }
 
     div:nth-child(3) {
-      font-size: 1.5vw;
+      font-size: 1.2vw;
 
       p {
         margin: 0;
@@ -97,6 +97,6 @@ hr {
   }
 
   .subtitle-black {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }

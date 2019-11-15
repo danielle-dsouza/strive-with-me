@@ -2,12 +2,12 @@
 
 .navbar {
   padding: 0;
-  background: rgba(0,0,0,0.678);
+  background: rgba(0, 0, 0, 0.678);
   overflow: hidden;
 
   .container-fluid {
     width: 100%;
-    padding: 0 20px; //TODO: Change px to responsive unit
+    padding: 0 20px; //FIXME: Change px to responsive unit
 
     button {
       border-width: 1px;
@@ -25,7 +25,7 @@
         color: white;
       }
 
-      ul > li {
+      ul>li {
         font-family: "Source Sans Pro";
         letter-spacing: 1px;
         padding: 0 20px 0 10px;
@@ -52,27 +52,26 @@
   border-bottom: 3px solid $highlight-color;
 }
 
-@media screen and (max-width: 767px) {
-  .navbar > div > div {
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .navbar>div>div {
     .navbar-brand {
       font-size: 3vw;
+    }
 
-      ul > li {
-        font-size: 1.3vw;
-      }
+    ul>li {
+      font-size: 1.8vw;
     }
   }
 }
 
-@media screen and (min-width: 768px) {
-  .navbar > div > div{
+@media screen and (min-width: 1025px) {
+  .navbar>div>div {
     .navbar-brand {
       font-size: 2.5vw;
-      font-family: "Staatliches";
+    }
 
-      ul > li {
-        font-size: 1.3vw;
-      }
+    ul>li {
+      font-size: 1.1vw;
     }
   }
 }

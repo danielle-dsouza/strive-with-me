@@ -38,15 +38,10 @@
   }
 }
 
-@media only screen and (min-width: 641px) and (max-width: 1050px) {
-  .title {
-    font-size: 5vw;
-    padding: 9% 0 3% 0;
-
-    .btn-custom {
-      margin: 3% 42% 0;
-      font-size: 2.8vw;
-    }
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .btn-custom {
+    margin: 3% 42% 0;
+    font-size: 2.5vw;
   }
 
   .btn-gray {
@@ -55,16 +50,13 @@
   }
 }
 
-@media only screen and (min-width: 1051px) {
-  .title {
-    font-size: 3vw;
-    padding: 6% 0 3% 0;
+@media only screen and (min-width: 1025px) {
 
-    .btn-custom {
-      margin: 3% 43% 0;
-      font-size: 1.5vw;
-    }
+  .btn-custom {
+    margin: 3% 43% 0;
+    font-size: 1.5vw;
   }
+
 
   .btn-gray {
     font-size: 1vw;
