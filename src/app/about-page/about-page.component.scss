@@ -1,0 +1,57 @@
+@import "../../scss/globals";
+@import "../../scss/parallax";
+@import "../../scss/buttons";
+@import "../../scss/fonts";
+@import "../../scss/subpages";
+
+.highlight {
+  font-weight: bold;
+}
+
+#mission {
+  margin: 4% 10%;
+
+  div:nth-child(1) {
+    font-family: "Fjalla One";
+    font-size: 5vw;
+    font-weight: bold;
+  }
+
+  div:nth-child(2) {
+    margin-top: 2%;
+    font-family: "Source Sans Pro";
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  #mission {
+    margin: 2% 8%;
+
+    div:nth-child(1) {
+      font-size: 3vw;
+    }
+
+    div:nth-child(2) {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 1025px) {
+  #mission {
+    margin: 2% 8%;
+
+    div:nth-child(1) {
+      font-size: 2vw;
+    }
+
+    div:nth-child(2) {
+      font-size: 1.2vw;
+    }
+  }
+}
