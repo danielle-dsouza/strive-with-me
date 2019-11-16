@@ -5,10 +5,12 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { WildPageComponent } from './wild-page/wild-page.component';
+import { DonatePageComponent } from './donate-page/donate-page.component';
 
 const routes: Routes = [
     { path: '', component: HomePageComponent },
     { path: 'about', component: AboutPageComponent },
+    { path: 'faq', component: DonatePageComponent },
     { path: 'contact', component: ContactPageComponent },
     { path: 'not-found', component: WildPageComponent },
     { path: '**', redirectTo: '/not-found' }

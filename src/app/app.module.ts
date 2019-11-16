@@ -11,6 +11,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { WildPageComponent } from './wild-page/wild-page.component';
+import { DonatePageComponent } from './donate-page/donate-page.component';
+import { FaqListComponent } from './donate-page/faq-list/faq-list.component';
+import { FaqItemComponent } from './donate-page/faq-list/faq-item/faq-item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { WildPageComponent } from './wild-page/wild-page.component';
     HomePageComponent,
     AboutPageComponent,
     ContactPageComponent,
-    WildPageComponent
+    WildPageComponent,
+    DonatePageComponent,
+    FaqListComponent,
+    FaqItemComponent
   ],
   imports: [
     BrowserModule,
