@@ -14,7 +14,7 @@
                 <li><a class="nav-link" [routerLink]="['/']" (click)="setTitle('Strive with ME')" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
                 <li><a class="nav-link" [routerLink]="['/about']" (click)="setTitle('Strive with ME | Who We Are')" routerLinkActive="active-link">Who We Are</a></li>
                 <li><a class="nav-link">Donate</a></li>
-                <li><a class="nav-link" (click)="setTitle('Strive with ME | Contact')">Contact</a></li>       
+                <li><a class="nav-link" [routerLink]="['/contact']" (click)="setTitle('Strive with ME | Contact')">Contact</a></li>       
             </ul>
         </div>
     </div>

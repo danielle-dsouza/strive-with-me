@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { WildPageComponent } from './wild-page/wild-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AboutPageComponent } from './about-page/about-page.component';
     HeaderComponent,
     FooterComponent,
     HomePageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    ContactPageComponent,
+    WildPageComponent
   ],
   imports: [
     BrowserModule,
