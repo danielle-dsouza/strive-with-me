@@ -1,0 +1,69 @@
+@import "../../scss/subpages";
+@import "../../scss/fonts";
+@import "../../scss/parallax";
+@import "../../scss/form";
+
+.c-info {
+  margin: 4% 10%;
+
+  div {
+    div:nth-child(1) {
+      text-align: center;
+      font-family: "Fjalla One";
+      font-size: 4vw;
+    }
+
+    p {
+      font-family: "Prompt";
+      font-size: 3.5vw;
+    }
+  }
+}
+
+.mapWrap {
+  position: relative;
+  padding-bottom: 66.6666667%;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .c-info {
+    margin: 2% 8%;
+
+    div {
+      div:nth-child(1) {
+        font-size: 2.8vw;
+      }
+
+      p {
+        font-size: 2.5vw;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .c-info {
+    margin: 2% 8%;
+
+    div {
+      div:nth-child(1) {
+        font-size: 2vw;
+      }
+
+      p {
+        font-size: 1.5vw;
+        text-align: center;
+      }
+    }
+  }
+}

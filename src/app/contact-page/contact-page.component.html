@@ -1,0 +1,74 @@
+<div id="contact-page">
+  <!--TITLE-->
+  <div class="title text-center">
+    Contact Us
+  </div>
+
+  <div class="c-info row">
+
+    <!--LOCATION-->
+    <div class="col-md-6 wow fadeIn delay-1">
+      <div>- Location -</div>
+
+      <div class="mapWrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2876.0079537994948!2d-79.2702541!3d43.8763868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a8baa122fbba251!2sJames%20Robinson%20Public%20School!5e0!3m2!1sen!2sca!4v1573857431489!5m2!1sen!2sca"
+          width="600" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+
+      <hr />
+    </div>
+
+    <!--HOURS-->
+    <div class="col-md-6 wow fadeIn delay-1">
+      <div>- Hours -</div>
+      <p>We meet every Monday in the main gym from 8:00PM (EST) to 10:00PM (EST). Feel free to drop in!</p>
+    </div>
+  </div>
+
+  <div class="p-img parallax-img3">
+    <div class="caption"><span>Say Hello!</span></div>
+  </div>
+
+  <!--CONTACT FORM-->
+  <div class="form-box">
+    <section id="email-form">
+      <form #form accept-chartset="UTF-8" action="https://usebasin.com/f/160917b9dbac" method="POST">
+        <div class="row">
+          <div class="col-md-6">
+            <input #word type="text" name="First" (blur)="smallText(word.value)" />
+            <label [ngClass]="{'fontTop': iftask}">First Name</label>
+          </div>
+          <div class="col-md-6">
+            <input #word2 type="text" name="Last" (blur)="smallText2(word2.value)" />
+            <label [ngClass]="{'fontTop': iftask2}">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <input #word3 type="email" name="Email" id="email" (blur)="smallText3(word3.value)" />
+            <label [ngClass]="{'fontTop': iftask3}">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <input #word4 type="text" name="Subject" (blur)="smallText4(word4.value)" />
+            <label [ngClass]="{'fontTop': iftask4}">Subject</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <textarea #word5 rows="3" type="text" name="Message" (blur)="smallText5(word5.value)"></textarea>
+            <label [ngClass]="{'fontTop': iftask5}">Message</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <button type="submit" class="square-button" (click)="form.submit()">Submit</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+
+</div>
