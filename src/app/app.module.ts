@@ -14,6 +14,7 @@ import { WildPageComponent } from './wild-page/wild-page.component';
 import { DonatePageComponent } from './donate-page/donate-page.component';
 import { FaqListComponent } from './donate-page/faq-list/faq-list.component';
 import { FaqItemComponent } from './donate-page/faq-list/faq-item/faq-item.component';
+import { TermsUseComponent } from './terms-use/terms-use.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FaqItemComponent } from './donate-page/faq-list/faq-item/faq-item.compo
     WildPageComponent,
     DonatePageComponent,
     FaqListComponent,
-    FaqItemComponent
+    FaqItemComponent,
+    TermsUseComponent
   ],
   imports: [
     BrowserModule,
