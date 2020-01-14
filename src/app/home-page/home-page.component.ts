@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home-page',
@@ -8,7 +9,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor(config: NgbCarouselConfig) { 
+  constructor(config: NgbCarouselConfig, private titleService: Title) { 
     config.interval = 6000;
     config.wrap = true;
     config.keyboard = false;  
@@ -18,7 +19,10 @@ export class HomePageComponent implements OnInit {
 
   }
 
-  ngOnInit() {
+  public setTitle(newTitle: string) {
+    this.titleService.setTitle(newTitle);
   }
+
+  ngOnInit() {}
 
 }
