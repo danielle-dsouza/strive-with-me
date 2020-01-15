@@ -1,5 +1,5 @@
-import { NgModule, Component } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
@@ -18,11 +18,15 @@ const routes: Routes = [
     { path: '**', redirectTo: '/not-found' }
 ];
 
+const routerOptions: ExtraOptions = {
+    useHash: false,
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled'
+};
+
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {
-        scrollPositionRestoration: 'enabled',
-    })],
-    exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes, routerOptions)],
+    exports: [RouterModule] 
 })
 
 export class AppRoutingModule { }
