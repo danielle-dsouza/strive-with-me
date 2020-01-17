@@ -14,7 +14,7 @@ export class FaqService {
         ),
         new Faq(
             "How much does it cost?",
-            "Answer."
+            "There is no fixed cost for attending meetings! The only costs come from any additional excursions and/or activities."
         ),
         new Faq(
             "How can I help?",
